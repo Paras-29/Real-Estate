@@ -15,7 +15,7 @@ const app = express();
 
 // Configure CORS
 const corsOptions = {
-  origin: ['http://localhost:5173','http://localhost:8080','http://localhost:8081'] ,// Vite's default port
+  origin: ['http://localhost:5173','http://localhost:8080','http://localhost:8081','https://real-estate-ten-peach-42.vercel.app'] ,// Vite's default port
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
