@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { useToast } from "@/components/ui/use-toast";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://real-estate-25ev.onrender.com";
 
 const ResetPassword = () => {
   const { token } = useParams();
