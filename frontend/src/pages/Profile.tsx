@@ -245,7 +245,7 @@ const Profile = () => {
       console.log("DEBUG - Profile - Sending update request with data:", updateData)
 
       const response = await axios.patch(
-        `http://localhost:5000/api/users/updateMe`,
+        `https://real-estate-25ev.onrender.com/api/users/updateMe`,
         updateData, // Send as JSON instead of FormData
         {
           headers: {
@@ -294,7 +294,7 @@ const Profile = () => {
 
       console.log("DEBUG - Profile - Sending banking update request with data:", updateData)
 
-      const response = await axios.patch(`http://localhost:5000/api/users/updateMe`, updateData, {
+      const response = await axios.patch(`https://real-estate-25ev.onrender.com/api/users/updateMe`, updateData, {
           headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -345,7 +345,7 @@ const Profile = () => {
         console.log(pair[0], pair[1])
       }
 
-      const response = await axios.patch(`http://localhost:5000/api/users/updateMe`, formData, {
+      const response = await axios.patch(`https://real-estate-25ev.onrender.com/api/users/updateMe`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -393,7 +393,7 @@ const Profile = () => {
       if (experience) formData.append("experience", experience.toString())
       if (specialization) formData.append("specialization", specialization)
 
-      const response = await axios.patch(`http://localhost:5000/api/users/updateMe`, formData, {
+      const response = await axios.patch(`https://real-estate-25ev.onrender.com/api/users/updateMe`, formData, {
           headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -543,7 +543,7 @@ const Profile = () => {
     
     setLoadingTeam(true)
     try {
-      const response = await axios.get("http://localhost:5000/api/teams/my-downline", {
+      const response = await axios.get("https://real-estate-25ev.onrender.com/api/teams/my-downline", {
           headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
